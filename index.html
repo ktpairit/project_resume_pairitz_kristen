@@ -4,30 +4,32 @@
     <meta charset="utf-8">
     <title></title>
     <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="css/vendor/normalize.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <header>
-        <h1>Kristen<span id="name">Pairitz</span></h1>
-        <p><span id="email">webdesignerkristen@gmail.com</span> | <span id="phone">872.704.0021</span></p>
+        <h1 class="visuallyHidden">Kristen's Resume</h1>
+        <p id="name"><strong>Kristen</strong>Pairitz</p>
+        <p class="para"><span class="email">webdesignerkristen@gmail.com</span> | <span class="email">872.704.0021</span></p>
         <p>Front-End Web Designer & Developer</p>
     </header>
 
-    <main>
-        <section>
+    <main class="group">
+        <section id="column1">
             <h2 class="visuallyHidden">Resume Part I</h2>
             <article>
                 <h3><span class="headings">Education</span></h3>
                     <ul>
-                        <li><span class="quals">University of Florida </span>Gainesville, FL <span class="italics">Dec 2016 (proj)</span></li>
+                        <li class="edu"><span class="quals">University of Florida </span>Gainesville, FL <span class="italics">Dec 2016 (proj)</span></li>
                         <p class="education">MA in Web Design & Online Communication</p>
-                        <li><span class="quals">Anderson University </span>Anderson, IN <span class="italics">Aug 2013</span></li>
+                        <li class="edu"><span class="quals">Anderson University </span>Anderson, IN <span class="italics">Aug 2013</span></li>
                         <p class="education">MBA; Leadership concentration</p>
-                        <li><span class="quals">Purdue University </span>West Lafayette, IN <span class="italics">May 2010</span></li>
+                        <li class="edu"><span class="quals">Purdue University </span>West Lafayette, IN <span class="italics">May 2010</span></li>
                         <p class="education">BS in Actuarial Science & Applied Statistics; B.A. French</p>
-                        <li><span class="quals">L’Université Paul-Valéry </span>Montpellier, France <span class="italics">2007-2008</span></li>
+                        <li class="edu"><span class="quals">L’Université Paul-Valéry </span>Montpellier, France <span class="italics">2007-2008</span></li>
                         <p class="education">French; Study abroad experience</p>
                     </ul>
             </article>
@@ -51,31 +53,41 @@
             </article>
         </section>
 
-        <section>
+        <section id="column2">
             <h2 class="visuallyHidden">Resume Part II</h2>
             <article>
                 <h3><span class="headings">Qualifications</span></h3>
-                    <article>
-                        <h4 class="skills"><span class="quals">Language Skills</span></h4>
-                            <ul>
-                                <li>XHTML | HTML | CSS</li>
-                                <li>HTML5 | CSS3</li>
-                                <li>JQuery | Javascript</li>
+                    <article class="skills">
+                        <h4><span class="quals">Language Skills</span></h4>
+                            <ul class="list">
+                                <li class="items">XHTML | HTML | CSS</li>
+                                <li class="items">HTML5 | CSS3</li>
+                                <li class="items">JQuery | Javascript</li>
                             </ul>
                     </article>
-                    <article>
-                        <h4 class="skills"><span class="quals">Software Skills</span></h4>
-                            <ul>
-                                <li>Git/GitHub</li>
-                                <li>Photoshop | Illustrator | InDesign</li>
-                                <li>Sublime Text 2 | Dreamweaver | Brackets</li>
+                    <article class="skills">
+                        <h4><span class="quals">Software Skills</span></h4>
+                            <ul class="list">
+                                <li class="items">Git/GitHub</li>
+                                <li class="items">Photoshop | Illustrator | InDesign</li>
+                                <li class="items">Sublime Text 2 | Dreamweaver | Brackets</li>
                             </ul>
                     </article>
-                    <article>
+                    <article id="languages">
                         <h4><span class="quals">Languages</span></h4>
-                            <ul>
-                                <li>English<span class="star">☆ ☆ ☆ ☆ ☆</span></li>
-                                <li>French<span class="star">☆ ☆ ☆ ☆ </span>☆</li>
+                            <ul class="list">
+                                <li class="items">English <span class="star">☆</span>
+                                           <span class="star"> ☆</span>
+                                           <span class="star"> ☆</span>
+                                           <span class="star"> ☆</span>
+                                           <span class="star"> ☆</span>
+                                </li>
+                                <li class="items">French <span class="star">☆</span>
+                                           <span class="star"> ☆</span>
+                                           <span class="star"> ☆</span>
+                                           <span class="star"> ☆</span>
+                                           <span> ☆</span>
+                                </li>
                             </ul>
                     </article>
             </article>
@@ -83,9 +95,9 @@
                 <h3><span class="headings">Work Experience</span></h3>
                     <p id="work">Department of Defense - DFAS</p>
                     <p><span class="quals">Management Support Specialist</span><span class="italics"> 1/2013 - Present</span></p>
-                        <p>Proposed & led initiatives to inprove internal processes for various departments.  Several examples include the creation of an automated tracking database & script for W2 corrections, a macro for reconciling payroll balances efficiently and accurately, & supporting the development of a telework workflow process to enable tracking & reporting capabilities.</p>
+                        <p class="workstuff">Proposed & led initiatives to inprove internal processes for various departments.  Several examples include the creation of an automated tracking database & script for W2 corrections, a macro for reconciling payroll balances efficiently and accurately, & supporting the development of a telework workflow process to enable tracking & reporting capabilities.</p>
                     <p><span class="quals">Financial Systems Specialist</span><span class="italics"> 8/2010 - 1/2013</span></p>
-                        <p>Redesigned & maintained several intranet webpages for 350+ users, led visual design of DTS pay.gov website enhancing user experience, supported development of Agency dashboard, & proposed & led development of pilot program to eliminate paper checks for retirees.</p>
+                        <p class="workstuff">Redesigned & maintained several intranet webpages for 350+ users, led visual design of DTS pay.gov website enhancing user experience, supported development of Agency dashboard, & proposed & led development of pilot program to eliminate paper checks for retirees.</p>
             </article>
         </section>
     </main>

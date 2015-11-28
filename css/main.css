@@ -1,0 +1,163 @@
+body {
+    border: 1px solid #D1D1D1;
+    color: #636363;
+    max-width: 1150px;
+    margin: auto;
+}
+
+html {
+    box-sizing: border-box;
+    font-weight: lighter;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.visuallyHidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding-bottom: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.group::after {
+    clear: both;
+    content: '';
+    display: block;
+}
+
+header, main {
+    padding: 0 20px  5px 20px;
+}
+
+#name {
+    font-size: 2.6em;
+    margin-bottom: -.3em;
+    margin-top: 1.3em;
+}
+
+.email, .headings, .websites, .star {
+    color: #1cbbb4;
+    opacity: .7;
+}
+
+h3 {
+    font-size: 1.6em;
+    font-weight: lighter;
+    margin-top: .8em;
+    margin-bottom: -.55em;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li a {
+    text-decoration: none;
+}
+
+li a:hover {
+    opacity: .6;
+}
+
+p.para {
+    margin-bottom: -.5em;
+}
+
+p.education {
+    margin-top: -.1em;
+}
+
+li {
+    margin-top: .4em;
+}
+
+ul li.edu {
+    margin-top: -.3em;
+}
+
+.quals {
+    font-weight: bold;
+}
+
+.list {
+    margin-top: -1em;
+}
+
+.items {
+    margin-top: -.00001em;
+}
+
+#work {
+    font-size: 1.18em;
+    margin-bottom: -.5em;
+}
+
+.workstuff {
+    margin-top: -.8em;
+}
+
+.italics {
+    font-style: italic;
+}
+
+span.star:before {
+    content: "\2605";
+    opacity: .6;
+    position: absolute;
+}
+
+footer {
+    background-color: #1cbbb4;
+    opacity: .6;
+    padding-top: 30px;
+}
+
+@media all and (min-width: 560px) {
+    body {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
+    #column1 {
+        float: left;
+        padding-left: 25px;
+        padding-right: 10px;
+        width: 50%;
+    }
+     #column2 {
+        border-left: 1px solid #1cbbb4;
+        padding-left: 25px;
+        padding-right: 30px;
+        float: right;
+        width: 50%;
+    }
+    footer {
+        padding-top: 60px;
+        background-color: #FFFFFF;
+    }
+    header {
+        padding-left: 45px;
+        padding-bottom: 20px;
+    }
+    #name {
+        font-size: 3em;
+    }
+    #languages {
+        margin-top: -.9em;
+    }
+}
+
+@media all and (min-width: 400px)  {
+    .skills {
+        display: inline-block;
+        padding: 0 20px 0 0;
+    }
+}
