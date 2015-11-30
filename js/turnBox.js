@@ -33,9 +33,9 @@
     }
 
     if(axis == "Y") {
-      var length = width; 
+      var length = width;
     } else {
-      var length = height; 
+      var length = height;
     }
 
     if(even == undefined) {
@@ -45,7 +45,7 @@
     if(length !== even) {
       var fixed = false;
       if(type == "skip") {
-        var type = "real";    
+        var type = "real";
       }
     } else {
       var fixed = true;
@@ -93,12 +93,12 @@
     {
       var prefix = get_prefix();
       var pespective = "";
-   
+
       $.each(prefix, function()
       {
         pespective = pespective + " " + this + "perspective: " + perspective + "px;\n";
       });
-      
+
       return pespective;
     }
 
@@ -107,7 +107,7 @@
     {
       var prefix = get_prefix();
       var transition = "";
-      
+
       $.each(prefix, function()
       {
         if(target == "each_face") {
@@ -131,7 +131,7 @@
 
         transition = transition + " " + this + "transition: " + each_transition + ";\n";
       });
-      
+
       return transition;
     }
 
@@ -140,12 +140,12 @@
     {
       var prefix = get_prefix();
       var transform_origin = "";
-   
+
       $.each(prefix, function()
       {
         transform_origin = transform_origin + " " + this + "transform-origin: " + val + ";\n";
       });
-      
+
       return transform_origin;
     }
 
@@ -163,12 +163,12 @@
 
       var prefix = get_prefix();
       var transform = "";
-    
+
       $.each(prefix, function()
       {
         transform = transform + " " + this + "transform: rotate" + axis + "(" + deg + "deg) translate3d(" + translate3d + ");\n";
       });
-      
+
       return transform;
     }
 
@@ -183,7 +183,7 @@
       if(deg == 0 || deg == 360 || deg == -360) {
         var translate3d = "0px, 0px, 0px";
       }
-      if(axis == "Y") { 
+      if(axis == "Y") {
         if(deg == 90 || deg == -90) {
           var translate3d = change_length/2 + "px, 0px, " + length/2 + "px";
         } else if(deg == 180 || deg == -180) {
@@ -354,7 +354,7 @@
         $.each(button, function()
         {
           var button = $(this);
-          
+
           if(button.attr("class").indexOf("turnBoxButtonFor-") > -1) {
             var reg = new RegExp("(turnBoxButtonFor-)([^ ]*)", "gi");
             var has_class = reg.exec(button.attr("class"));
@@ -386,11 +386,11 @@
       }
 
       if(axis == "Y") {
-        var length_property = "width"; 
-        var length = width; 
+        var length_property = "width";
+        var length = width;
       } else {
         var length_property = "height";
-        var length = height; 
+        var length = height;
       }
 
       var adjust_transform_origin = "";
@@ -399,20 +399,20 @@
         if(axis == "Y") {
           var transform_origin = even + "px 50%";
           var adjust_space = " left: " + -(even - length)/2 + "px;\n";
-          var adjust_transform_origin = 
+          var adjust_transform_origin =
           "\n" + box_name + ".turnBoxAdjust > .turnBoxFace {\n"
           + get_transform_origin_code("0px 50%") +
           "}\n";
         } else {
           var transform_origin = "50% " + even + "px";
           var adjust_space = " height: " + even + "px;\n";
-          var adjust_transform_origin = 
+          var adjust_transform_origin =
           "\n" + box_name + ".turnBoxAdjust > .turnBoxFace {\n"
           + get_transform_origin_code("50% 0px") +
           "}\n";
         }
 
-        var even_style = 
+        var even_style =
         box_name + ".turnBoxCurrentFace0, " + box_name + ".turnBoxCurrentFace2, " + box_name + ".turnBoxCurrentFace4 {\n" +
         adjust_space +
         "}\n" +
@@ -427,10 +427,10 @@
         var transform_origin = "50% 50%";
       }
 
-      var box_style = 
+      var box_style =
       box_name + " {\n" +
       get_transition_code("box") +
-      get_perspective_code() + 
+      get_perspective_code() +
       " display: block;\n" +
       " position: relative;\n" +
       " width: " + width + "px;\n" +
@@ -439,7 +439,7 @@
       "}\n" +
       adjust_transform_origin;
 
-      var face_style = 
+      var face_style =
       box_name + " > .turnBoxFace {\n" +
       get_transform_origin_code(transform_origin) +
       " position: absolute;\n" +
@@ -531,11 +531,11 @@
         });
       }
 
-      var general_style = 
-      box_style + "\n" + 
+      var general_style =
+      box_style + "\n" +
       face_style + "\n" +
-      even_style + "\n" + 
-      each_face_style + "\n" + 
+      even_style + "\n" +
+      each_face_style + "\n" +
       adjust_style;
 
       append_styles(box, general_style);
@@ -583,7 +583,7 @@
     var box = $(this);
 
     $.each(box, function()
-    {      
+    {
       var target_box = $(this);
       var box_val = get_box_val(target_box);
       var setting = $.extend(defaults, options);
@@ -664,7 +664,7 @@
 
   function encode_upper_case(text)
   {
-    var text_head = text.slice(0, 1).toUpperCase(); 
+    var text_head = text.slice(0, 1).toUpperCase();
     var text_body = text.slice(1);
     var text = text_head + text_body;
 
@@ -673,7 +673,7 @@
 
   function decode_upper_case(text)
   {
-    var text_head = text.slice(0, 1).toLowerCase(); 
+    var text_head = text.slice(0, 1).toLowerCase();
     var text_body = text.slice(1);
     var text = text_head + text_body;
 
@@ -706,7 +706,7 @@
 
             if(button.attr("class").indexOf("turnBoxButtonEvent" + encode_upper_case(each_event)) > -1) {
               button_event = button_event + " " + each_event;
-            } 
+            }
           });
         } else {
           button_event = button_event + "click";

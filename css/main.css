@@ -213,7 +213,20 @@ span.star:before {
 
 .message {
     background-color: #1cbbb4;
-    padding-bottom: 25px;
-    padding-left: 7px;
-    padding-right: 7px;
+    padding-bottom: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 5px;
+}
+
+#closeMessage {
+    color: #FFFFFF;
+    display: block;
+    font-weight: lighter;
+    padding-bottom: 4px;
+    padding-top: 9px;
+}
+
+#initials {
+    color: #FFFFFF;
 }
