@@ -40,33 +40,33 @@ html {
     display: block;
     }
 
+header {
+    position: relative;
+    z-index: 100;
+    text-align: center;
+}
+
 header, main {
     background-color: #FFFFFF;
-/*    margin-top: -3em;*/
     opacity: .92;
     padding-right: 20px;
     padding-bottom: 5px;
     padding-left: 20px;
 }
 
-/*
-#column1, #column2 {
-    margin-top: 3em;
-}
-*/
-
-.sample {
-}
-
 #name {
     font-size: 2.6em;
     margin-bottom: -.3em;
-    padding-top: 1.3em;
+    padding-top: 1em;
 }
 
 .email, .headings, .websites, .star {
     color: #1cbbb4;
     opacity: .7;
+}
+
+#eduHeader {
+    margin-top: 0; /*necessary to prevent collapsing margins*/
 }
 
 h3 {
@@ -144,69 +144,15 @@ span.star:before {
     position: absolute;
 }
 
-@media all and (min-width: 560px) {
-    body {
-        margin-top: 70px;
-        margin-bottom: 70px;
-    }
-    .headerClass {
-    display: inline-block;
-    }
-    #header1 {
-    float: left;
-    }
-    #header2 {
-    float: right;
-    vertical-align: middle;
-    }
-    #column1 {
-        float: left;
-        padding-left: 35px;
-        padding-right: 10px;
-        width: 50%;
-    }
-     #column2 {
-        border-left: 1px solid #1cbbb4;
-        float: right;
-        padding-bottom: 5px;
-        padding-left: 35px;
-        padding-right: 30px;
-        width: 50%;
-    }
-    header {
-        padding-left: 55px;
-        padding-bottom: 25px;
-    }
-    main {
-        padding-bottom: 60px
-    }
-    #name {
-        font-size: 3em;
-    }
-    #languages {
-        margin-top: -.9em;
-    }
+/****************************************TURNBOX.js jQuery**************************************/
+#header2 {
+    width: 120px;
+    margin: auto;
 }
 
-@media all and (min-width: 400px) {
-    .skills {
-        display: inline-block;
-        padding: 0 20px 0 0;
-    }
-}
-
-@media all and (min-width: 1500px) {
-    body {
-        margin-top: 90px;
-        margin-bottom: 90px;
-    }
-}
-
-/*TURNBOX jQuery*/
 .sample {
     background-color: #1cbbb4;
     border-top: 1px solid #D1D1D1;
-    opacity: .7;
     margin-right: 60px;
     text-align: center;
 }
@@ -229,4 +175,70 @@ span.star:before {
 
 #initials {
     color: #FFFFFF;
+}
+/****************************************TURNBOX.js jQuery**************************************/
+
+@media all and (min-width: 560px) {
+    body {
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+    .headerClass {
+        display: inline-block;
+    }
+    #header1 {
+        float: left;
+    }
+    #header2 {
+        float: right;
+        vertical-align: middle;
+    }
+    #eduHeader {
+        margin-top: .8em;
+    }
+    #column1 {
+        float: left;
+        padding-left: 35px;
+        padding-right: 10px;
+        width: 50%;
+    }
+     #column2 {
+        border-left: 1px solid #1cbbb4;
+        float: right;
+        padding-bottom: 5px;
+        padding-left: 35px;
+        padding-right: 30px;
+        width: 50%;
+    }
+    header {
+        text-align: left;
+        padding-left: 55px;
+        padding-bottom: 25px;
+    }
+    main {
+        padding-bottom: 60px
+    }
+    #name {
+        font-size: 3em;
+    }
+    #languages {
+        margin-top: -.9em;
+    }
+    .sample {
+        opacity: .7;
+    }
+}
+
+@media all and (min-width: 400px) {
+    .skills {
+        display: inline-block;
+        padding: 0 20px 0 0;
+    }
+}
+
+@media all and (min-width: 1500px) {
+    body {
+        margin-top: 90px;
+        margin-bottom: 90px;
+    }
 }
