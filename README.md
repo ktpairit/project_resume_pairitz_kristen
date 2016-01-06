@@ -1,7 +1,7 @@
 # URL
 [Ktpairit GitHub](https://github.com/ktpairit/project_resume_pairitz_kristen)
 
-[View on the Web](http://kristenpairitz.com/resume)
+[View on the Web](http://kpvisualdesigns.com/resume)
 
 # Resources
 **[jQuery Backstretch](http://srobbin.com/jquery-plugins/backstretch/)
