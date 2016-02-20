@@ -65,6 +65,11 @@ header, main {
     opacity: .7;
 }
 
+p.italics {
+    margin-top: -.5em;
+    font-size: .8em;
+}
+
 #eduHeader {
     margin-top: 0; /*necessary to prevent collapsing margins*/
 }
@@ -217,10 +222,10 @@ span.star:before {
         padding-bottom: 25px;
     }
     main {
-        padding-bottom: 60px
+        padding-bottom: 80px
     }
     #name {
-        font-size: 3em;
+        font-size: 3.1em;
     }
     #languages {
         margin-top: -.9em;
@@ -234,6 +239,9 @@ span.star:before {
     .skills {
         display: inline-block;
         padding: 0 20px 0 0;
+    }
+    #column1 {
+        padding-right: 45px;
     }
 }
 
